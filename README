@@ -1,0 +1,2 @@
+Este é um exemplo simples de como fazer uma busca por Cidades em relação a um Estado passado, mas utilizando Ajax.
+Por ser um exemplo simples não me preocupei com algumas boas práticas, como evitar SQL Injection, separar melhor as camadas, testes de unidade, etc, etc.
