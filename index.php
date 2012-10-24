@@ -13,10 +13,10 @@
 		<?php
 			$repositorio = new RepositorioDeEstado();
 			$estados = $repositorio->obtemTodosOsEstados();
-			while($estado = mysql_fetch_array($estados)) {
-				echo '<option value='.$estado["ID_ESTADO"].'>'.$estado["SIGLA"].'</option>';
-			} 
-		?>
+                ?>
+		<?php	while($estado = mysql_fetch_array($estados)):?>
+				<option value="<?php echo $estado["ID_ESTADO"]?>"><?php echo $estado["SIGLA"]?></option>
+		<?php endwhile;?>
 	</select>
 	
 	<select id="cidades">
